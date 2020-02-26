@@ -20,7 +20,6 @@ LABEL=['<unk>', 'O', 'B-TimeAttributes', 'I-TimeAttributes', 'B-Diseases', 'I-Di
 with open ('spacy_ner_train', 'rb') as fp:
     TRAIN_DATA = pickle.load(fp)
 
-len(TRAIN_DATA)
 
 def main(model=None, new_model_name='new_model', output_dir=None, n_iter=30):
     """Setting up the pipeline and entity recognizer, and training the new entity."""
@@ -79,6 +78,7 @@ def main(model=None, new_model_name='new_model', output_dir=None, n_iter=30):
         doc2 = nlp2(test_text)
         for ent in doc2.ents:
             print(ent.label_, ent.text)
+
 
 main()
 
