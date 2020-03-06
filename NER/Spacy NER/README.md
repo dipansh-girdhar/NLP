@@ -12,6 +12,8 @@ The normal .conll NER format:
 Spacy accepted NER format:
 ![spacy_accepted_ner](spacy_accepted_ner.png?raw=true "spacy_accepted_ner")
 
+To convert, first use the conll_to_json.py script with input as your own ner .conll data and then json_to_spacy.py with input as the output from the conll_to_json.py.
+
 
 The sentences are created based on the appearance of “. 0” in the .conll file which marked the end of a sentence.
 
