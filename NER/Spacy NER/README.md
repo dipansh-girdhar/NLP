@@ -7,10 +7,10 @@ The difference in the case of spacy is that spacy doesn’t accept the general .
 
 The normal .conll NER format: 
 
-![NER_conll](NER/Spacy NER/NER_conll.png?raw=true "NER_conll")
+![NER_conll](NER_conll.png?raw=true "NER_conll")
 
 Spacy accepted NER format:
-![spacy_accepted_ner](NER/Spacy NER/spacy_accepted_ner.png?raw=true "spacy_accepted_ner")
+![spacy_accepted_ner](spacy_accepted_ner.png?raw=true "spacy_accepted_ner")
 
 
 The sentences are created based on the appearance of “. 0” in the .conll file which marked the end of a sentence.
